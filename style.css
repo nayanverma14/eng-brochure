@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30, 0.7)),url(cape-town-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+    height: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 145, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.text-above-video{
+    width: 90%;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center ;
+}
+.text-above-video h1{
+    font-size: 62px;
+}
+.text-above-video p{
+    font-size: 14px;
+    padding: 10px 0px 40px;
+}
+.scroll-button{
+    display: inline-block;;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+}
+.scroll-button:hover{
+    border: 1px solid rgb(255, 145, 0);
+    background: rgb(255, 145, 0);
+    transition: 1s;
+}
+.main-screen{
+    width: 80%;
+    margin: auto;
+    padding-top: 27px;
+    text-align: center;
+}
+.main-screen h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.main-screen p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height:22px;
+    padding: 10px;
+}
+.video-text{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.video{
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 0px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    box-sizing: border-box;
+    height: 403px;
+    background: rgb(0, 0, 0);
+}
+.text{
+    flex-basis: 40%;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    padding: 5px;
+    height: 403px;
+    max-width: 450px;
+    min-width: 450px;
+    box-sizing: border-box;
+}
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.column-1{
+    flex-basis: 23%;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 3%;
+    height: 150px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+.column-1:hover{
+    flex-basis: 25%;
+    background: rgb(0, 0, 0);
+    box-sizing: border-box;   
+}
+.button-pic{
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border: 2px solid black;
+}
+.button-pic:hover{
+    width: 275px;
+}
+.change-video-button{
+    text-decoration: none;
+}
+
+.sub-header{
+    min-height: 40vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30, 0.7)),url(team-img.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 0px;
+    font-size: 35px
+}
+.team-members{
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top:30px;
+}
+.team-members h3{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 20px;
+}
+.member{
+    margin: 2%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.name{
+    flex-basis:22%;
+    background: #f0b2b2;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+.history-header{
+    min-height: 40vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30, 0.7)),url(histoy-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.history-header h1{
+    margin-top: 0px;
+    font-size: 35px
+}
+.history-image{
+    margin: 3%;
+    margin-left: 3%;
+    margin-right: 0%;
+}
